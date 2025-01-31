@@ -1,0 +1,53 @@
+let mapleader=' '
+
+set clipboard=unnamedplus
+
+set scrolloff=5
+set incsearch
+set surround
+set multiple-cursors
+set commentary
+set easymotion
+
+syntax on
+
+map Q gq
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
+
+set clipboard^=ideaput
+
+
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+noremap <leader>]e <Action>(GotoNextError)
+noremap <leader>[e :action (GotoPreviousError)
+noremap <leader>cr <Action>(Run)
+noremap <leader>re :action RenameElement<CR>
+noremap <leader>rf :action RecentFiles<CR>
+noremap <leader>rF :action RecentChangedFiles<CR>
+noremap <leader>w :action NextProjectWindow<CR>
+noremap <leader>pw :action PreviousProjectWindow<CR>
+noremap <leader>RF :action RenameFile<CR>
+noremap <leader>sw :action SurroundWith<CR>
+noremap <leader>e :NERDTree<CR>
+noremap <leader>]t :action NextTab<CR>
+noremap <leader>[t :action PreviousTab<CR>
+noremap <leader>]s :action NextSplitter<CR>
+noremap <leader>[s :action PreviousSplitter<CR>
+noremap <leader>eq :action CloseEditor<CR>
+noremap <leader>ca :action ShowIntentionActions<CR>
+
+""""""""""""""""""""""""""""""""""""""Start and stop""""""""""""""""""""""""""""""""
+
+nnoremap <leader>d :action Debug<CR>
+nnoremap <leader>rc :action Stop<CR>
+nnoremap <leader>rr :action Rerun<CR>
+nnoremap <leader>rm :action RunClass<CR>
+nnoremap <leader>cd :action ChooseDebugConfiguration<CR>
+nnoremap <leader>cr :action ChooseRunConfiguration<CR>
+
+""""""""""""""""""""""""""""""""""""""Debug""""""""""""""""""""""""""""""""
+nnoremap <leader>tb :action ToggleLineBreakpoint<CR>
+nnoremap <leader>sb :action ViewBreakpoints<CR>
