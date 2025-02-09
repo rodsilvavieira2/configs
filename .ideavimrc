@@ -44,6 +44,8 @@ noremap <leader>ca :action ShowIntentionActions<CR>
 nnoremap <leader>d :action Debug<CR>
 nnoremap <leader>rc :action Stop<CR>
 nnoremap <leader>rr :action Rerun<CR>
+nnoremap <leader>rs :action Restart<CR>
+nnoremap <leader>rt :action RerunTests<CR>
 nnoremap <leader>rm :action RunClass<CR>
 nnoremap <leader>cd :action ChooseDebugConfiguration<CR>
 nnoremap <leader>cr :action ChooseRunConfiguration<CR>
