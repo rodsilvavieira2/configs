@@ -1,0 +1,25 @@
+Host teamsoft-dev
+    HostName ec2-34-212-141-139.us-west-2.compute.amazonaws.com
+    User ec2-user
+    IdentityFile ~/.ssh/teamsoft_dev_new.pem
+
+Host cepea-prod
+    HostName api.cepea.org.br
+    User teamsoft
+    Port 20022
+    IdentityFile ~/.ssh/cepea_teamsoft_prod.pem
+    
+Host teamsoft-dev-legado
+    HostName 44.233.231.252
+    User ec2-user
+    IdentityFile ~/.ssh/teamsoft_dev_legado.pem
+    
+Host teamsoft-prod
+    HostName ec2-18-208-159-44.compute-1.amazonaws.com
+    User ec2-user
+    IdentityFile ~/.ssh/teamsoft_prod.pem
+    
+Host dominos-prod
+    HostName api.domlivery.dominos.com.br
+    User ec2-user
+    IdentityFile ~/.ssh/dominos_prod.pem
